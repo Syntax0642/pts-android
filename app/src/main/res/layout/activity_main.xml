@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/ng"
+    >
+
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rpg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/rpg"
+    ></ImageView>
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scroll"
+        app:layout_constraintLeft_toRightOf="@id/rpg"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="30dp"
+        ></ImageView>
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/world"
+        app:layout_constraintTop_toBottomOf="@id/rpg"
+        app:layout_constraintStart_toStartOf="@id/rpg"
+        android:id="@+id/world"
+        ></ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/globe"
+        app:layout_constraintTop_toBottomOf="@id/rpg"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@id/world"
+        android:layout_marginLeft="30dp"
+        ></ImageView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/world"
+        android:layout_marginTop="200dp"
+        app:backgroundTint="#000"
+        android:background="@drawable/border"
+        android:text="Login"
+        android:textSize="20dp"
+        android:id="@+id/login"
+        android:textColor="@color/white"
+        ></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@color/white"
+        android:background="@drawable/border"
+        android:text="Register"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+
+        ></com.google.android.material.button.MaterialButton>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
